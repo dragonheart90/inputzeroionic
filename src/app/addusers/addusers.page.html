@@ -1,0 +1,50 @@
+<ion-content class="login-content" padding>
+  <ion-row class="logo-row">
+  <ion-segment [(ngModel)]="pet" padding>
+          <ion-segment-button  value="puppies" checked >
+           <span class="whit"> Login </span>
+          </ion-segment-button>
+  </ion-segment>
+  </ion-row>
+   <div  [ngSwitch]="pet" padding>
+   <br><br>
+          <ion-list *ngSwitchCase="'puppies'" class="login-box"  checked>
+         
+              <ion-row >
+            <ion-col >
+                 <h3 align="center">Add User</h3>
+                 <form #loginForm="ngForm" novalidate>
+                <ion-list inset >
+  
+                  <ion-item>
+                    <ion-label color="primary" position="floating">Name</ion-label>
+                    <ion-input type="text" [(ngModel)]="data.uname" name="uname" required></ion-input>
+                  </ion-item>
+                  
+                  <ion-item>
+                  <ion-label color="primary" position="floating">Email ID</ion-label>
+                    <ion-input type="text"  [(ngModel)]="data.email" name="email" required></ion-input>
+                  </ion-item>
+                 
+                  <ion-item>
+                    <ion-label color="primary" position="floating">Phone Number</ion-label>
+                    <ion-input type="Number"   [(ngModel)]="data.phone" name="phone" required></ion-input>
+                  </ion-item>
+          
+                  <ion-item>
+                  <ion-label color="primary" position="floating">city</ion-label>
+                    <ion-input type="text"  [(ngModel)]="data.city" name="city" required></ion-input>
+                  </ion-item>
+                 
+                  <br>
+               <span class="inlines"> 
+                <ion-button color="primary" class="pad" (click)="add()" >Add Member</ion-button>
+                  </span>
+              </ion-list>
+              </form>
+            </ion-col>
+          </ion-row>
+        </ion-list>
+        </div>
+        <ion-button color="primary" (click)="dismiss()" >Close</ion-button>
+  </ion-content>

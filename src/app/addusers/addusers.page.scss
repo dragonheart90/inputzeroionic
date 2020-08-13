@@ -1,0 +1,82 @@
+.login-content {
+    // --background: url(../../assets/car.jpeg) top left no-repeat;
+    // --ion-background-color: rgb(0, 0, 0)!important;
+    --background: url(../../assets/back.jpg) repeat center center / cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  .inl
+  {
+    display: inline;
+  }
+    .logo-row {
+      padding-top: 40px;
+      padding-bottom: 15px;
+      margin: 0 auto;
+      display: block;
+    }
+    .heads {
+      color: #ffffff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: italic;
+      font-weight: 500 !important;
+      font-size: 175%;
+    }
+    .inlines{
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    // @media only screen and (max-width: 1076px) {
+
+    //     .inlines {
+    //         width: 110%;
+    //         margin: px;
+    //         float: left;
+    //     }
+        
+    // }
+    ion-row {
+    align-items: center;
+    text-align: center;
+  }
+
+  .whit {
+      color: #ffffff;
+      text-emphasis: bold;
+      font-weight: bold;
+  }
+
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #0313f3;
+  }
+  .box {
+    background-color: rgba(255, 255, 255, 0.575);
+    // padding: 20px 20px 20px 20px;
+    // margin-top: 30px;
+    font-weight: bold;
+    color: #0313f3;
+  }
+  .pad
+  {
+      padding: 0px 20px 0px 20px;
+
+  }
+  ion-item {
+    border-radius: 30px !important;
+    padding-left: 30px !important;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff9c;
+    border-bottom: 0px !important;
+    box-shadow: none !important;
+}
+
+ion-label {
+ display: block; width: 100px; 
+}

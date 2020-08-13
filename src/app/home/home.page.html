@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Users</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let category of rows">
+    <!-- <ion-card-header>
+      <img src="{{category.avatar}}"/>
+    </ion-card-header> -->
+    <ion-card-content>
+    <ion-item> 
+      <span style="float: left;"><img src="{{category.avatar}}" /></span> &nbsp;&nbsp;&nbsp;
+      <span style="float: right;"><ion-label style="float: right;">Name: {{category.first_name}} {{category.last_name}}<br>Email id: {{category.email}}</ion-label></span>
+      <!-- <ion-button fill="outline" slot="end">View</ion-button> -->
+    </ion-item>
+    </ion-card-content>
+    </ion-card>
+</ion-content>

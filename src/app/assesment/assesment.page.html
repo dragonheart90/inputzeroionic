@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-refresher slot="fixed" (ionRefresh)="getdata()">
+    <ion-refresher-content pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing..." ></ion-refresher-content>
+  </ion-refresher>
+  <ion-toolbar>
+    <ion-title>Assesment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let category of rows">
+    <!-- <ion-card-header>
+      <img src="{{category.avatar}}"/>
+    </ion-card-header> -->
+    <ion-card-content>
+    <ion-item> 
+      <span style="float: right;"><ion-label style="float: right;">Name: {{category.name}}<br>Email id: {{category.email}}
+      <br>Phone: {{category.phone}}
+      <br>city: {{category.city}}
+      </ion-label></span>
+      <!-- <ion-button fill="outline" slot="end">View</ion-button> -->
+    </ion-item>
+    </ion-card-content>
+    </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="addusers()">
+    <ion-fab-button color="primary">
+      <ion-icon name="person-add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
